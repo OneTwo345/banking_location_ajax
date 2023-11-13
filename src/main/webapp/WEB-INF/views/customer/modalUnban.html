@@ -1,0 +1,100 @@
+<th:block th:fragment="modalUnBan">
+    <div class="modal fade" id="modalUnBan" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Modal UnBan</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="area-error hide">
+                    </div>
+                    <form method="post" id="frmUnBan">
+                        <div class="row mb-3 mt-3 flex-wrap">
+                            <div class="col-lg-3">
+                                <label for="idUnBan" class="form-label"
+                                >ID</label
+                                >
+                                <input
+                                        type="number"
+                                        class="form-control"
+                                        id="idUnBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                            <div class="col-lg-3">
+                                <label for="fullNameUnBan" class="form-label"
+                                >FullName</label
+                                >
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="fullNameUnBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                            <div class="col-lg-3">
+                                <label for="emailUnBan" class="form-label"
+                                >Email</label
+                                >
+                                <input
+                                        type="email"
+                                        class="form-control"
+                                        id="emailUnBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 flex-wrap">
+                            <div class="col-lg-3">
+                                <label for="balanceUnBan" class="form-label"
+                                >Balance</label
+                                >
+                                <input
+                                        type="number"
+                                        class="form-control"
+                                        id="balanceUnBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                            <div class="col-lg-3">
+                                <label for="phoneUnBan" class="form-label"
+                                >Phone</label
+                                >
+                                <input
+                                        type="tel"
+                                        class="form-control"
+                                        id="phoneUnBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                            <div class="col-lg-3">
+                                <label for="addressUnBan" class="form-label"
+                                >Address</label
+                                >
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="addressUnBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button
+                            type="button"
+                            class="btn btn-outline-danger"
+                            id="btnUnBan"
+                    >
+                        <i class="fas fa-ban"></i>
+                        UnBan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</th:block>

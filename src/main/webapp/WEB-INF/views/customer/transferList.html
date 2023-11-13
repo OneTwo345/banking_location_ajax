@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>List of customers</title>
+    <th:block th:replace="head" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand">List of customers</a>
+                <div class="d-flex" style="gap: 10px;">
+                    <a href="/list">
+                        <button class="btn btn-outline-light" type="button">
+                            <i class="fas fa-history"></i>
+                            List of customers
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <table id="tbTransfer" class="table table-hover">
+            <thead>
+            <tr>
+                <th></th>
+                <th>#</th>
+                <th>Sender</th>
+                <th>Balance Sender</th>
+                <th>Transfer Amount ($)</th>
+                <th>Fees (%)</th>
+                <th>Amount ($)</th>
+                <th>Time</th>
+                <th>Recipient</th>
+                <th>Balance Recipient</th>
+            </tr>
+            </thead>
+            <tbody id="tBodyTransfer">
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="/assets/js/transfer.js"></script>
+</body>
+</html>

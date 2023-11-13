@@ -1,0 +1,76 @@
+<th:block th:fragment="modalDeposit">
+    <div class="modal fade" id="modalDeposit" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Modal deposit</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="area-error hide">
+
+                    </div>
+                    <form method="post" id="frmDeposit">
+                        <div class="row mb-3 mt-3">
+                            <div class="col-lg-6">
+                                <label for="fullNameDe" class="form-label"
+                                >Full Name</label
+                                >
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="fullNameDe"
+                                        readonly
+                                />
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="balanceDe" class="form-label"
+                                >Balance</label
+                                >
+                                <input
+                                        type="number"
+                                        class="form-control"
+                                        id="balanceDe"
+                                        readonly
+                                />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-lg-6">
+                                <label for="phoneDe" class="form-label"
+                                >Phone</label
+                                >
+                                <input
+                                        type="tel"
+                                        class="form-control"
+                                        id="phoneDe"
+                                        readonly
+                                />
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="amountDe" class="form-label"
+                                >Transaction Amount</label
+                                >
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="amountDe"
+                                />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button
+                            type="button"
+                            class="btn btn-outline-success"
+                            id="btnDeposit"
+                    >
+                        <i class="fas fa-plus"></i> Deposit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</th:block>

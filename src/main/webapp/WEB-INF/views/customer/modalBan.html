@@ -1,0 +1,101 @@
+<th:block th:fragment="modalBan">
+    <div class="modal fade" id="modalBan" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Modal Ban</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="area-error hide">
+
+                    </div>
+                    <form method="post" id="frmBan">
+                        <div class="row mb-3 mt-3 flex-wrap">
+                            <div class="col-lg-4">
+                                <label for="idBan" class="form-label"
+                                >ID</label
+                                >
+                                <input
+                                        type="number"
+                                        class="form-control"
+                                        id="idBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="fullNameBan" class="form-label"
+                                >FullName</label
+                                >
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="fullNameBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="emailBan" class="form-label"
+                                >Email</label
+                                >
+                                <input
+                                        type="email"
+                                        class="form-control"
+                                        id="emailBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 flex-wrap">
+                            <div class="col-lg-4">
+                                <label for="balanceBan" class="form-label"
+                                >Balance</label
+                                >
+                                <input
+                                        type="number"
+                                        class="form-control"
+                                        id="balanceBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="phoneBan" class="form-label"
+                                >Phone</label
+                                >
+                                <input
+                                        type="tel"
+                                        class="form-control"
+                                        id="phoneBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="addressBan" class="form-label"
+                                >Address</label
+                                >
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="addressBan"
+                                        readonly="readonly"
+                                />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button
+                            type="button"
+                            class="btn btn-outline-danger"
+                            id="btnBan"
+                    >
+                        <i class="fas fa-ban"></i>
+                        Ban
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</th:block>

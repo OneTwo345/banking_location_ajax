@@ -1,0 +1,76 @@
+<th:block th:fragment="modalWithdraw">
+    <div class="modal fade" id="modalWithdraw" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Modal Withdraw</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="area-error hide">
+
+                    </div>
+                    <form method="post" id="frmWithdraw">
+                        <div class="row mb-3 mt-3">
+                            <div class="col-lg-6">
+                                <label for="fullNameWd" class="form-label"
+                                >Full Name</label
+                                >
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="fullNameWd"
+                                        readonly
+                                />
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="balanceWd" class="form-label"
+                                >Balance</label
+                                >
+                                <input
+                                        type="number"
+                                        class="form-control"
+                                        id="balanceWd"
+                                        readonly
+                                />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-lg-6">
+                                <label for="phoneWd" class="form-label"
+                                >Phone</label
+                                >
+                                <input
+                                        type="tel"
+                                        class="form-control"
+                                        id="phoneWd"
+                                        readonly
+                                />
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="amountWd" class="form-label"
+                                >Transaction Amount</label
+                                >
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="amountWd"
+                                />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button
+                            type="button"
+                            class="btn btn-outline-warning"
+                            id="btnWithdraw"
+                    >
+                        <i class="fas fa-minus"></i> Withdraw
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</th:block>

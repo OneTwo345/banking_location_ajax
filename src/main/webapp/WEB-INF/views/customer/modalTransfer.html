@@ -1,0 +1,128 @@
+<th:block th:fragment="modalTransfer">
+    <div class="modal fade" id="modalTransfer" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Modal Transfer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="area-error hide">
+
+                    </div>
+                    <form method="post" id="frmTransfer">
+                        <div class="row mb-3 mt-3">
+                            <div class="col-lg-3">
+                                <label for="senderIdTf" class="form-label"
+                                >Sender ID</label
+                                >
+                                <input
+                                        type="number"
+                                        class="form-control"
+                                        id="senderIdTf"
+                                        readonly="readonly"
+                                />
+                            </div>
+                            <div class="col-lg-3">
+                                <label for="senderFullNameTf" class="form-label"
+                                >Sender Name</label
+                                >
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="senderFullNameTf"
+                                        readonly="readonly"
+                                />
+                            </div>
+                            <div class="col-lg-3">
+                                <label for="senderEmailTf" class="form-label"
+                                >Email</label
+                                >
+                                <input
+                                        type="email"
+                                        class="form-control"
+                                        id="senderEmailTf"
+                                        readonly="readonly"
+                                />
+                            </div>
+                            <div class="col-lg-3">
+                                <label for="senderBalanceTf" class="form-label"
+                                >Sender balance</label
+                                >
+                                <input
+                                        type="number"
+                                        class="form-control"
+                                        id="senderBalanceTf"
+                                        readonly="readonly"
+                                />
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-3">
+                            <div class="col-lg-3">
+                                <label
+                                        for="recipientIdTf"
+                                        class="form-label"
+                                >Recipient Name</label
+                                >
+                                <select
+                                        class="form-control"
+                                        id="recipientIdTf"
+                                >
+                                </select>
+                            </div>
+                            <div class="col-lg-3">
+                                <label
+                                        for="transferAmountTf"
+                                        class="form-label"
+                                >Transfer Amount ($)</label
+                                >
+                                <input
+                                        type="number"
+                                        class="form-control"
+                                        id="transferAmountTf"
+                                        value="0"
+                                        min="0"
+                                />
+                            </div>
+                            <div class="col-lg-3">
+                                <label for="feeTf" class="form-label"
+                                >Fees (%)</label
+                                >
+                                <input
+                                        type="number"
+                                        class="form-control"
+                                        id="feeTf"
+                                        readonly="readonly"
+                                        value="10"
+                                />
+                            </div>
+                            <div class="col-lg-3">
+                                <label for="transactionAmountTf" class="form-label"
+                                >Total Amount Of Transaction (VND)</label
+                                >
+                                <input
+                                        type="number"
+                                        class="form-control"
+                                        id="transactionAmountTf"
+                                        readonly="readonly"
+                                        value="0"
+                                />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button
+                            type="button"
+                            class="btn btn-outline-primary"
+                            id="btnTransfer"
+                    >
+                        <i class="fas fa-exchange-alt"></i>
+                        Transfer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</th:block>
